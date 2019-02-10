@@ -1,15 +1,17 @@
-import random
+import random # importando biblioteca para gerar um numero pseudo-aleatorio
 
 print("*********************************")
 print("Bem vindo ao jogo de Adivinhação!")
 print("*********************************")
 
-numero_secreto = random.randrange(1,101)
+numero_secreto = random.randrange(1,101) # Gera numero secreto de 1 a 100
 
 print("Qual o nivel de dificuldade?")
-print("(1) Facil \n(2) Medio \n(3) Dificil\n")
+print("(1) Facil \n(2) Medio \n(3) Dificil\n") # Quanto maior a dificulade, menos rodadas o usuario tera
 
-nivel = int(input("Defina o nivel: "))
+nivel = int(input("Defina o nivel: "))	# a funcao input sempre gera uma entrada do tipo string
+										# como vamos comparar com um número inteiro, precisamos
+										# fazer a conversao para que o programa funcione
 
 total_de_rodadas = 0
 rodada_atual = 1
@@ -24,9 +26,8 @@ elif(nivel == 3):
 
 for rodada_atual in range(1, (total_de_rodadas + 1)):
 
-	chute = int(input("Digite um número entre 1 e 100: ")) # a funcao input sempre gera uma entrada do tipo string
-												# como vamos comparar com um número inteiro, precisamos
-												# fazer a conversao para que o programa funcione
+	chute = int(input("Digite um número entre 1 e 100: "))	# mesmo caso de conversao da entrada do usuario
+															# para um numero inteiro
 
 	print("Rodada {} de {}".format(rodada_atual,str(total_de_rodadas)))
 
@@ -48,7 +49,8 @@ for rodada_atual in range(1, (total_de_rodadas + 1)):
 		print("Sua pontuacao: {} pontos".format(pontos))
 		break # se acertou, entao o jogo acabou
 	else:
-		pontos_perdidos = abs(numero_secreto - chute)
+		pontos_perdidos = abs(numero_secreto - chute)	# quanto maior for a distancia absoluta do chute do usuario
+														# ao numero secreto, mais pontos o jogador ira  perder
 		pontos -= pontos_perdidos	
 		if(maior):
 			print("Voce errou! O chute foi maior do que o número secreto")
