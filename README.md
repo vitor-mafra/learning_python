@@ -1,5 +1,6 @@
 <p align="center">
-<img src="https://www.google.com/search?q=python&client=firefox-b-ab&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiy4O6R5JTjAhXJDbkGHfhcBsYQ_AUIECgB&biw=1920&bih=977#imgrc=vZKJO2_oBP1evM:">
+<img src="https://www.google.com/search?q=python&client=firefox-b-ab&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiy4O6R5JTjAhXJDbkGHfhcBsYQ_AUIECgB&biw=1920&bih=977#imgrc=vZKJO2_oBP1evM:"
+width="160" height="160">
 </p>
 Repositorio criado para armazenar codigos em Python durante o meu aprendizado.
 
